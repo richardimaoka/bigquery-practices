@@ -50,7 +50,6 @@ AS item, ['JACOB', 'COBRA'] AS customer_name
 |  | pear | COBRA |
 |  | peach |  |
 
-
 ```sql
 SELECT items, customer_name
 FROM 
@@ -59,8 +58,8 @@ CROSS JOIN
 (SELECT 'JACOB' AS customer_name)
 ```
 
-|  | items | customer_name |	
+|  | items | customer_name |
 |--|-------|---------------|
 |1 | apple | JACOB |
-|2 | pear | JACOB | 
+|2 | pear | JACOB |
 |3 | peach | JACOB |
