@@ -35,8 +35,19 @@ AS item, 'JACOB' AS customer_name
 
 |  | items | customer_name |
 |--|-------|---------------|
-|  | apple | JACOB |
+| 1 | apple | JACOB |
 |  | pear |  |
+|  | peach |  |
+
+```sql
+SELECT['apple', 'pear', 'peach']
+AS item, ['JACOB', 'COBRA'] AS customer_name
+```
+
+|  | items | customer_name |
+|--|-------|---------------|
+| 1| apple | JACOB |
+|  | pear | COBRA |
 |  | peach |  |
 
 
