@@ -1,6 +1,6 @@
 https://www.youtube.com/watch?v=STo98QUKDS8
 
-```
+```sql
 WITH fruits AS (SELECT ['raspberry', 'blackberry', 'strawberry', 'cherry'] AS fruit_array)
 
 
@@ -15,7 +15,7 @@ FROM fruits
 
 	
 
-```
+```sql
 WITH fruits AS (SELECT ['raspberry', 'blackberry', 'strawberry', 'cherry'] AS fruit_array)
 
 
@@ -25,11 +25,22 @@ FROM fruits
 ```
 
 |   | one_indexed |
+|---|--------------|
 |1  | blackberry  |
 
-
-
+```sql
+SELECT['apple', 'pear', 'peach']
+AS item, 'JACOB' AS customer_name
 ```
+
+|  | items | customer_name |
+|--|-------|---------------|
+|  | apple | JACOB |
+|  | pear |  |
+|  | peach |  |
+
+
+```sql
 SELECT items, customer_name
 FROM 
   UNNEST(['apple', 'pear', 'peach']) AS items
